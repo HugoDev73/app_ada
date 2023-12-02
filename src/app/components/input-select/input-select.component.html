@@ -1,0 +1,16 @@
+<div [formGroup]="parent">
+  <label [for]="key" class="block text-sm font-medium text-gray-900">
+    {{ label }}
+  </label>
+  <div class="mt-1 relative rounded-md">
+    <select
+      [formControlName]="key"
+      class="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 rounded-lg bg-gray-50 text-base focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+    >
+      <option value="">Select an option</option>
+      <option *ngFor="let option of options" [value]="option.value">
+        {{ option.name }}
+      </option>
+    </select>
+  </div>
+</div>
