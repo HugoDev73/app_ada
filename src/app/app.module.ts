@@ -9,6 +9,7 @@ import { InputTextComponent } from './components/input-text/input-text.component
 import { NewIncidentComponent } from './pages/new-incident/new-incident.component';
 import { InputSelectComponent } from './components/input-select/input-select.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeIncidentComponent,
     InputTextComponent,
     NewIncidentComponent,
-    InputSelectComponent
+    InputSelectComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
