@@ -10,6 +10,9 @@ import { NewIncidentComponent } from './pages/new-incident/new-incident.componen
 import { InputSelectComponent } from './components/input-select/input-select.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonComponent } from './components/button/button.component';
+import { CardLayoutComponent } from './components/card-layout/card-layout.component';
+import { CardInfoComponent } from './components/card-info/card-info.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import { ButtonComponent } from './components/button/button.component';
     InputTextComponent,
     NewIncidentComponent,
     InputSelectComponent,
-    ButtonComponent
+    ButtonComponent,
+    CardLayoutComponent,
+    CardInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

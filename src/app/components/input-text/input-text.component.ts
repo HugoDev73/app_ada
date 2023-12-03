@@ -10,4 +10,5 @@ export class InputTextComponent {
   @Input() parent!: FormGroup;
   @Input() label!: string;
   @Input() key!: string;
+  @Input() type: string = 'text';
 }

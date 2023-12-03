@@ -1,0 +1,23 @@
+
+
+<div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow mt-2">
+    <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <div class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Fecha</div>
+          <div>{{data?.date }}</div>
+        </div>
+        <div class="input">
+            <div class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Cliente</div>
+            <div>{{data?.nameCustomer ?? ''}} {{data?.lastNameCustomer ?? ''}}</div>
+        </div>
+        <div class="input">
+            <div class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Sexo</div>
+            <div>{{data?.sexuallityCustomer ?? ''}}</div>
+        </div>
+        <div class="input">
+            <div class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">Acciones</div>
+            <button (click)="goDetails()">Ver detalles</button>
+            <button (click)="deteteIncident()">Eliminar</button>
+        </div>
+      </div>
+</div>

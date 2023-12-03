@@ -3,7 +3,9 @@
         <app-button (click)="registerNew()">Registrar</app-button>
     </div>
 
-    <div class="list mt-4 border rounded-lg shadow-md">
-        listado de incidentes
+    <div class="list mt-4">
+       <ng-container *ngFor="let item of listData">
+        <app-card-info [data]="item" (onDelete)="onDeleteItem($event)"></app-card-info>
+       </ng-container>
     </div>
 </div>

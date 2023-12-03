@@ -1,38 +1,380 @@
 <div class="" [formGroup]="form">
   <div class="">
-    <div class="grid grid-cols-4 gap-4">
-      <div class="input">
-        <app-input-select
-          [parent]="form"
-          label="City"
-          key="city"
-          [options]="options"
-        ></app-input-select>
+    <app-card-layout titleCard="Datos generales del accidentado">
+      <div class="grid grid-cols-2 gap-4 mt-4">
+        <div class="input">
+          <app-input-text [parent]="form" label="RFC" key="rfcCustomer">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="CURP" key="curpCustomer">
+          </app-input-text>
+        </div>
       </div>
-      <div class="input">
-        <app-input-text [parent]="form" label="Otro" key="name">
-        </app-input-text>
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <app-input-text [parent]="form" label="Nombre" key="nameCustomer">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Apellido paterno"
+            key="lastNameCustomer"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Apellido materno"
+            key="surnameCustomer"
+          >
+          </app-input-text>
+        </div>
       </div>
-      <div class="input">
-        <app-input-text [parent]="form" label="Otro" key="name">
-        </app-input-text>
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <app-input-text [parent]="form" label="Calle" key="streetCustomer">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="Colonia" key="suburbCustomer">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Número exterior"
+            key="exteriorNumberCustomer"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Número interior"
+            key="interiorNumberCustomer"
+          >
+          </app-input-text>
+        </div>
       </div>
-      <div class="input">
-        <app-input-text [parent]="form" label="Otro" key="name">
-        </app-input-text>
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Código postal"
+            key="postalCodeCustomer"
+          >
+          </app-input-text>
+        </div>
+        <div class="input col-span-3">
+          <app-input-text
+            [parent]="form"
+            label="Entre calles"
+            key="betweenStreetCustomer"
+          >
+          </app-input-text>
+        </div>
       </div>
-      <div class="input">
-        <app-input-text [parent]="form" label="Otro" key="name">
-        </app-input-text>
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <app-input-select
+            [parent]="form"
+            label="Sexo"
+            key="sexuallityCustomer"
+            [options]="enumSexuallity"
+          ></app-input-select>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="Edad" key="ageCustomer">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-select
+            [parent]="form"
+            label="¿Tiene hijos?"
+            key="hasChildrenCustomer"
+            [options]="enumYesNo"
+          ></app-input-select>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Número de hijos"
+            key="numberChildrenCustomer"
+          >
+          </app-input-text>
+        </div>
       </div>
-      <div class="input">
-        <app-input-text [parent]="form" label="Otro" key="name">
-        </app-input-text>
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <app-input-select
+            [parent]="form"
+            label="Situación conyugal"
+            key="maritalStatusCustomer"
+            [options]="enumMaritalStatus"
+          ></app-input-select>
+        </div>
       </div>
-    </div>
+    </app-card-layout>
 
-    <div class="mt-4">
-      <button (click)="onSubmitForm()">Guardar</button>
+    <app-card-layout titleCard="Datos e identificación de la empresa">
+      <div class="grid grid-cols-2 gap-4 mt-4">
+        <div class="input">
+          <app-input-text [parent]="form" label="RFC" key="rfcCompany">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Razón social"
+            key="businessName"
+          >
+          </app-input-text>
+        </div>
+      </div>
+      <div class="grid grid-cols-8 gap-4">
+        <button class="bg-transparent mt-4 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          Button
+        </button>
+        <button class="bg-transparent mt-4 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          Button
+        </button>
+        <button class="bg-transparent mt-4 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          Button
+        </button>
+      </div>
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <app-input-select
+            [parent]="form"
+            label="Linea de negocios"
+            key="businessLine"
+            [options]="enumBusinessLine"
+          ></app-input-select>
+        </div>
+        <div class="input">
+          <app-input-select
+            [parent]="form"
+            label="Unidad de negocios"
+            key="businessUnit"
+            [options]="enumBusinessUnit"
+          ></app-input-select>
+        </div>
+      </div>
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <app-input-text [parent]="form" label="Calle" key="streetCompany">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="Colonia" key="suburbCompany">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Número interior y exterior"
+            key="numberCompany"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Código postal"
+            key="postalCodeCompany"
+          >
+          </app-input-text>
+        </div>
+        <div class="input col-span-2">
+          <app-input-text
+            [parent]="form"
+            label="Entre calles"
+            key="betweenStreetCompany"
+          >
+          </app-input-text>
+        </div>
+      </div>
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <app-input-select
+            [parent]="form"
+            label="Puesto laboral"
+            key="jobTitle"
+            [options]="enumJobTitle"
+          ></app-input-select>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Departamento"
+            key="departament"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="Area" key="area">
+          </app-input-text>
+        </div>
+      </div>
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿Quien es el manager de tu area?"
+            key="managerArea"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="Jefe de area" key="bossArea">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="Tel." key="phoneNumber">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="Correo" key="email">
+          </app-input-text>
+        </div>
+      </div>
+    </app-card-layout>
+
+    <app-card-layout titleCard="Datos especificos del accidente">
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="input">
+          <app-input-text [parent]="form" label="Fecha" key="date" type="date">
+          </app-input-text>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mt-4">
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿Cuando paso el accidente?"
+            key="dateAccident"
+            type="date"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿A que hora pasó?"
+            key="timeAccidente"
+            type="time"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿Como ocurrio?"
+            key="howDidItHappen"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <!-- <app-input-text [parent]="form" label="¿Como ocurrio?" key="name">
+          </app-input-text> -->
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿Qué actos inseguros y condiciones intervinieros en el accidente?"
+            key="unsafeActs"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿Consumiste algún medicamento que alterara tus reflejos?"
+            key="didYouConsumeAnyMedication"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="¿Estabas solo(a)?" key="youWereAlone">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="¿Hubo testigos?" key="wereThereWitnesses">
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="Menciona la zona el cuerpo afectada"
+            key="affectedBodyArea"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿Acudió inmediatamente a su clinica asignada?"
+            key="didYouGoToClinic"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿La lesión provocada por el accidente requirió hospitalización?"
+            key="injuryCaused"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿Recibió atención médica?"
+            key="didYouReceiveMedicalAttention"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-select
+            [parent]="form"
+            label="Mencione donde recibió atención médica"
+            key="whenReceiveMedicalAttention"
+            [options]="enumMedicalAttention"
+          ></app-input-select>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿Cual es su número de seguro?"
+            key="securityNumber"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text
+            [parent]="form"
+            label="¿Recibió incapacidad?"
+            key="receivedDisability"
+          >
+          </app-input-text>
+        </div>
+        <div class="input">
+          <app-input-text [parent]="form" label="¿Cuanto tiempo?" key="howLong">
+          </app-input-text>
+        </div>
+      </div>
+    </app-card-layout>
+
+    <div class="mt-4 mb-4">
+     <div *ngIf="!dataDetail?.idIncident">
+      <button (click)="onSubmitFormCreate()" class="bg-transparent mt-4 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Guardar</button>
+     </div>
+     <div *ngIf="dataDetail?.idIncident">
+      <button (click)="onSubmitFormUpdate()" class="bg-transparent mt-4 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Actualizar</button>
+     </div>
     </div>
   </div>
 </div>
