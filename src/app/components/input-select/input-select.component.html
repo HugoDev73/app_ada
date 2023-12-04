@@ -7,10 +7,10 @@
   </label>
   <div class="relative">
     <select
-    [formControlName]="key"
+      [formControlName]="key"
       class="block appearance-none w-full bg-gray-100 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
     >
-    <option *ngFor="let option of options" [value]="option.value">
+    <option *ngFor="let option of options" [value]="option.value" >
       {{ option.name }}
     </option>
     </select>

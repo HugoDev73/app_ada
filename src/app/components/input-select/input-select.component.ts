@@ -16,4 +16,5 @@ export class InputSelectComponent {
   @Input() options!: ISelectOption[];
 
   constructor() {}
+
 }
