@@ -9,20 +9,20 @@ export function getListLifeCenter():ListLifeCenter[] {
   return [
     {
       id: '1',
-      lifeCenter: 'INMOBILIARIA',
+      lifeCenter: 'INMOBILIARIA CINEMATOGRAFÍA DEL NORTE',
       Sucursal: 'ESFERA MONTERREY',
       Ubicacion: 'Monterrey, Nuevo Léon',
     },
     {
       id: '2',
-      lifeCenter: 'CINEMATOGRAFIA',
+      lifeCenter: 'INMOBILIARIA CINEMATOGRAFÍA DEL NORTE',
       Sucursal: 'ESCALA CULIACAN',
       Ubicacion: 'Culiacan, Sinaloa ',
     },
     {
       id: '3',
-      lifeCenter: 'DEL NORTE',
-      Sucursal: 'ESPACIO LAS AMERICAS ',
+      lifeCenter: 'INMOBILIARIA CINEMATOGRAFÍA DEL NORTE',
+      Sucursal: 'ESPACIO LAS AMÉRICAS ',
       Ubicacion: 'Morelia Mich.',
     },
     {
@@ -39,45 +39,46 @@ export function getListLifeCenter():ListLifeCenter[] {
     },
     {
       id: '6',
-      lifeCenter: 'PROMOTORA INMOBILIARI',
-      Sucursal: 'MORELIAESCALA LA HUERTA,)',
+      lifeCenter: 'PROMOTORA INMOBILIARIA Y CONSTRUCTORA DE PLAZA MORELIA',
+      Sucursal: 'MORELIA ESCALA LA HUERTA,)',
       Ubicacion: 'Morelia Mich.',
     },
     {
       id: '7',
-      lifeCenter: 'Y CONSTRUCTORA',
-      Sucursal: 'GALERIA DEL ZAPATO',
+      lifeCenter: 'PROMOTORA INMOBILIARIA Y CONSTRUCTORA DE PLAZA MORELIA',
+      Sucursal: 'GALERÍA DEL ZAPATO',
       Ubicacion: 'Morelia Mich.',
     },
     {
       id: '8',
-      lifeCenter: 'DE PLAZA MORELIA',
-      Sucursal: 'ESFERA QUERETARO',
+      lifeCenter: 'PROMOTORA INMOBILIARIA Y CONSTRUCTORA DE PLAZA MORELIA',
+      Sucursal: 'ESFERA QUERÉTARO',
       Ubicacion: 'Queretaro , Queretaro',
     },
     {
       id: '9',
-      lifeCenter: 'IMOBILIARIA',
+      lifeCenter: 'IMOBILIÁRIA CINEMATOGRÁFICA OCCIDENTAL',
       Sucursal: 'ESCALA LAS ARMAS',
       Ubicacion: 'LAS ARMAS, TLANEPANTLA',
     },
     {
       id: '10',
-      lifeCenter: 'CINEMATOGRAFICA',
-      Sucursal: 'ESACALA MAZATLAN',
+      lifeCenter: 'IMOBILIÁRIA CINEMATOGRÁFICA OCCIDENTAL',
+      Sucursal: 'ESCALA MAZATLÁN',
       Ubicacion: 'MAZATLAN, SINALOA ',
     },
     {
       id: '11',
-      lifeCenter: 'OCCIDENTAL',
+      lifeCenter: 'IMOBILIÁRIA CINEMATOGRÁFICA OCCIDENTAL',
       Sucursal: 'ESCALA CELAYA',
       Ubicacion: 'ESCALA CELAYA CELAYA, GUANAJUATO',
     },
     {
       id: '12',
       lifeCenter: 'PROMOTORA INMOBILIARIA RESIDENCIAL MICHOACANA,    SA DE CV',
-      Sucursal: 'TORRE      FINANCIERA',
+      Sucursal: 'TORRE FINANCIERA',
       Ubicacion: 'Morelia Mich.',
     },
   ];
 }
+

@@ -137,6 +137,14 @@
       <div class="grid grid-cols-4 gap-4 mt-4">
         <div class="input">
           <app-input-select
+            [parent]="form"
+            label="Linea de negocios"
+            key="businessLine"
+            [options]="enumBusinessLine"
+          ></app-input-select>
+        </div>
+        <div class="input">
+          <app-input-select
           [parent]="form"
           label="Agencias"
           key="agency"
@@ -159,16 +167,9 @@
           [options]="enumLifeCenter"
         ></app-input-select>
         </div>
-        <div class="input">
-          <app-input-select
-            [parent]="form"
-            label="Linea de negocios"
-            key="businessLine"
-            [options]="enumBusinessLine"
-          ></app-input-select>
-        </div>
       </div>
       <div class="grid grid-cols-4 gap-4 mt-4">
+        <div class="card"></div>
         <div class="card-agency">
           <div *ngIf="form.get('agency')?.value">
             <div>
